@@ -1,0 +1,20 @@
+services:
+  db:
+    container_name: postgres_container_sistema_cadastro
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: sistema_cadastro
+    ports:
+      - "5431:5432"
+  pgadmin:
+    container_name: pgadmin4_container_2
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin@pgadmin.com
+      PGADMIN_DEFAULT_PASSWORD: root
+    ports:
+      - "4040:80"
