@@ -72,12 +72,17 @@ O projeto inclui testes unitários para todas as camadas:
 
 Para executar os testes unitários:
 ```
-mvn test
+╰─❯ mvn test
 ```
 
 Para executar os testes de integração:
 ```
-mvn verify
+╰─❯ mvn verify
+```
+
+Para executar todos os teste
+```
+╰─❯ mvn test -Pintegration-tests                                                                                                                  ─╯
 ```
 
 ## Requisitos
